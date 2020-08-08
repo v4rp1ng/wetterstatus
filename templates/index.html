@@ -1,0 +1,52 @@
+{% extends 'tpl.html' %}
+
+{% block title %}Wetter Isenegger Scraper{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-5">
+        <h1>Wetter Heute</h1>
+        <table class="table table-striped">
+            <tr>
+                <td>{{ table_rows[1].text }}</td>
+                <td>{{ table_rows[2].text }}</td>
+            </tr>
+            <tr>
+                <td>{{ table_rows[3].text }}</td>
+                <td>{{ table_rows[4].text }}</td>
+            </tr>
+            <tr>
+                <td>{{ table_rows[7].text }}</td>
+                <td>{{ table_rows[8].text }}</td>
+            </tr>
+            <tr>
+                <td>{{ table_rows[9].text }}</td>
+                <td>{{ table_rows[10].text }}</td>
+            </tr>
+            <tr>
+                <td>{{ table_rows[11].text }}</td>
+                <td>{{ table_rows[12].text }}</td>
+            </tr>
+            <tr>
+                <td>{{ table_rows[13].text }}</td>
+                <td>{{ table_rows[14].text }}</td>
+            </tr>
+            <tr>
+                <td>{{ table_rows[17].text }}</td>
+                <td>{{ table_rows[18].text }}</td>
+            </tr>
+            <tr>
+                <td>{{ table_rows[19].text }}</td>
+                <td>{{ table_rows[20].text }}</td>
+            </tr>
+            <tr>
+                <td colspan="2">{{ table_rows[26].text }}</td>
+            </tr>
+            <tr>
+                <td colspan="2">{{ table_rows[27].text }}</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+{% endblock %}
